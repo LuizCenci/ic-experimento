@@ -87,3 +87,25 @@ SonarQube
    ↓
 Build
 ```
+
+## Evidências da análise de qualidade
+
+As evidências abaixo mostram que a análise do SonarQube Cloud é executada **dentro do pipeline do GitHub Actions**, e não separadamente.
+
+### Pipeline
+
+Execução do workflow `CI - React com Qualidade` disparada pelo push na `main`. A etapa **SonarQube Scan** roda depois de **Test coverage** e antes de **Build**, e todas as etapas foram concluídas com sucesso.
+
+![Pipeline](docs/evidencias/pipeline.png)
+
+### SonarQube
+
+Log da etapa **SonarQube Scan** no GitHub Actions.[`docs/evidencias/sonarqube-scan-action.txt`](docs/evidencias/sonarqube-scan-action.txt) e inclui a leitura do relatório de cobertura (`Analysing [.../coverage/lcov.info]`) e a mensagem `ANALYSIS SUCCESSFUL`.
+
+![SonarQube](docs/evidencias/sonarqube-scan.png)
+
+### Quality Gate
+
+Resultado da análise no SonarQube Cloud (branch `main`, aba **Overall Code**). O Quality Gate **Sonar way** foi aprovado (**Passed**), com 0 issues de segurança, confiabilidade e manutenibilidade, **66,7% de cobertura** (vinda do `lcov.info` gerado pelos testes) e 0,0% de duplicação.
+
+![Quality Gate](docs/evidencias/quality-gate.png)

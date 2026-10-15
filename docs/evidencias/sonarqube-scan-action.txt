@@ -1,0 +1,184 @@
+Run SonarSource/sonarqube-scan-action@v7
+Installing Sonar Scanner CLI 8.0.1.6346 for linux-x64...
+Downloading from: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-8.0.1.6346-linux-x64.zip
+Warning: ⚠ Skipping GPG signature verification (not recommended)
+/usr/bin/unzip -o -q /home/runner/work/_temp/1081e3f2-1ae3-4458-ae0d-e969dca2f0b1
+Sonar Scanner CLI cached to: /opt/hostedtoolcache/sonar-scanner-cli/8.0.1.6346/linux-x64
+/opt/hostedtoolcache/sonar-scanner-cli/8.0.1.6346/linux-x64/bin/sonar-scanner -Dsonar.projectBaseDir=.
+00:44:05.961 INFO  Scanner configuration file: /opt/hostedtoolcache/sonar-scanner-cli/8.0.1.6346/linux-x64/conf/sonar-scanner.properties
+00:44:05.963 INFO  Project root configuration file: /home/runner/work/ic-experimento/ic-experimento/sonar-project.properties
+00:44:05.977 INFO  SonarScanner CLI 8.0.1.6346
+00:44:05.983 INFO  Linux 6.17.0-1022-azure amd64
+00:44:08.819 INFO  Communicating with SonarQube Cloud
+00:44:08.820 INFO  JRE provisioning: os[linux], arch[x86_64]
+00:44:12.036 INFO  Starting SonarScanner Engine...
+00:44:12.036 INFO  Java 21.0.12.1 Eclipse Adoptium (64-bit)
+00:44:15.263 INFO  Load global settings
+00:44:16.254 INFO  Load global settings (done) | time=989ms
+00:44:16.338 INFO  Server id: 1BD809FA-AWHW8ct9-T_TB3XqouNu
+00:44:16.361 INFO  Loading required plugins
+00:44:16.361 INFO  Load plugins index
+00:44:16.532 INFO  Load plugins index (done) | time=172ms
+00:44:16.535 INFO  Load/download plugins
+00:44:17.196 INFO  Load/download plugins (done) | time=662ms
+00:44:17.433 INFO  Loaded core extensions: sca, architecture, a3s
+00:44:17.674 INFO  Load project settings for component key: 'LuizCenci_ic-experimento'
+00:44:18.133 INFO  Load project settings for component key: 'LuizCenci_ic-experimento' (done) | time=458ms
+00:44:18.145 INFO  Found an active CI vendor: 'Github Actions'
+00:44:18.507 INFO  Process project properties
+00:44:18.525 INFO  Project key: LuizCenci_ic-experimento
+00:44:18.526 INFO  Base dir: /home/runner/work/ic-experimento/ic-experimento
+00:44:18.526 INFO  Working dir: /home/runner/work/ic-experimento/ic-experimento/.scannerwork
+00:44:18.543 INFO  Check ALM binding of project 'LuizCenci_ic-experimento'
+00:44:18.760 INFO  Detected project binding: BOUND
+00:44:18.761 INFO  Check ALM binding of project 'LuizCenci_ic-experimento' (done) | time=215ms
+00:44:18.763 INFO  Load branch configuration
+00:44:18.764 INFO  Github event: push
+00:44:18.780 INFO  Auto-configuring branch main
+00:44:18.781 INFO  Load branch configuration (done) | time=18ms
+00:44:18.785 INFO  Create analysis
+00:44:19.220 INFO  Branch name: main, type: long
+00:44:19.220 INFO  Create analysis (done) | time=435ms
+00:44:19.698 INFO  Load quality profiles
+00:44:20.230 INFO  Load quality profiles (done) | time=532ms
+00:44:20.244 INFO  Load active rules
+00:44:20.792 INFO  Load active rules (done) | time=547ms
+00:44:21.053 INFO  Organization key: luizcenci
+00:44:21.073 INFO  Preprocessing files...
+00:44:21.115 INFO  2 languages detected in 6 preprocessed files (done) | time=41ms
+00:44:21.116 INFO  6 files ignored because of inclusion/exclusion patterns
+00:44:21.116 INFO  0 files ignored because of scm ignore settings
+00:44:21.132 INFO  Loading plugins for detected languages
+00:44:21.134 INFO  Load/download plugins
+00:44:22.083 INFO  Load/download plugins (done) | time=950ms
+00:44:22.253 INFO  Load project repositories
+00:44:22.446 INFO  Load project repositories (done) | time=194ms
+00:44:22.470 INFO  Indexing files...
+00:44:22.471 INFO  Project configuration:
+00:44:22.471 INFO    Excluded sources: src/**/*.test.js, src/**/*.test.jsx, **/build-wrapper-dump.json, src/**/*.test.js, src/**/*.test.jsx
+00:44:22.471 INFO    Included tests: src/**/*.test.js, src/**/*.test.jsx
+00:44:22.472 INFO    Excluded sources for coverage: src/main.jsx, src/data.js
+00:44:22.477 INFO  6 files indexed (done) | time=6ms
+00:44:22.478 INFO  Quality profile for css: Sonar way comprehensive
+00:44:22.478 INFO  Quality profile for js: Sonar way comprehensive
+00:44:22.478 INFO  ------------- Run sensors on module Catálogo de Tecnologias
+00:44:22.525 INFO  Load metrics repository
+00:44:22.691 INFO  Load metrics repository (done) | time=165ms
+00:44:22.699 INFO  Sensor cache enabled
+00:44:22.703 INFO  Load sensor cache
+00:44:23.613 INFO  Load sensor cache (15 KB) | time=910ms
+00:44:24.101 INFO  Reflections took 67 ms to scan 1 urls, producing 30 keys and 303 values
+00:44:24.544 INFO  Sensor IaC YAML File Type Classification Sensor [iac]
+00:44:24.549 INFO  Sensor IaC YAML File Type Classification Sensor [iac] (done) | time=4ms
+00:44:24.549 INFO  Sensor Scan Manifest Module Properties Collector [commona3scontextcollector]
+00:44:25.421 INFO  Sensor Scan Manifest Module Properties Collector [commona3scontextcollector] (done) | time=870ms
+00:44:25.421 INFO  Sensor HTML [web]
+00:44:25.426 INFO  Sensor HTML [web] (done) | time=5ms
+00:44:25.427 INFO  Sensor JasminFileCollectorSensor [jasmin]
+00:44:25.428 INFO  Sensor JasminFileCollectorSensor [jasmin] (done) | time=0ms
+00:44:25.429 INFO  Sensor IaC hadolint report Sensor [iac]
+00:44:25.429 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+00:44:25.429 INFO  Sensor Java Config Sensor [iac]
+00:44:25.430 INFO  There are no files to be analyzed for the Java language
+00:44:25.430 INFO  Sensor Java Config Sensor [iac] (done) | time=0ms
+00:44:25.430 INFO  Sensor IaC Docker Sensor [iac]
+00:44:25.431 INFO  There are no files to be analyzed for the Docker language
+00:44:25.431 INFO  Sensor IaC Docker Sensor [iac] (done) | time=2ms
+00:44:25.432 INFO  Sensor IaC GitHub Actions Sensor [iac]
+00:44:25.432 INFO  There are no files to be analyzed for the GitHub Actions language
+00:44:25.433 INFO  Sensor IaC GitHub Actions Sensor [iac] (done) | time=1ms
+00:44:25.433 INFO  Sensor IaC actionlint report Sensor [iac]
+00:44:25.434 INFO  Sensor IaC actionlint report Sensor [iac] (done) | time=0ms
+00:44:25.435 INFO  Sensor IaC Shell Sensor [iac]
+00:44:25.435 INFO  There are no files to be analyzed for the Shell language
+00:44:25.435 INFO  Sensor IaC Shell Sensor [iac] (done) | time=0ms
+00:44:25.435 INFO  Sensor JavaScript/TypeScript Coverage [javascript]
+00:44:25.436 INFO  Analysing [/home/runner/work/ic-experimento/ic-experimento/coverage/lcov.info]
+00:44:25.451 INFO  Sensor JavaScript/TypeScript Coverage [javascript] (done) | time=17ms
+00:44:25.451 INFO  Sensor EnterpriseTextAndSecretsSensor [textenterprise]
+00:44:25.466 INFO  Available processors: 4
+00:44:25.467 INFO  Using 4 threads for analysis.
+00:44:25.902 INFO  The following rules are activated in the quality profile but will not raise any issue, because they are being rolled out progressively: secrets:S8135, secrets:S8136. You can enable it by setting: sonar.featureflag.cloud-security-enable-secrets-S8135, sonar.featureflag.cloud-security-enable-secrets-S8136 to true.
+00:44:25.984 INFO  Start fetching files for the text and secrets analysis
+00:44:25.992 INFO  Using Git CLI to retrieve dirty files
+00:44:25.998 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+00:44:25.999 INFO  Starting the text and secrets analysis
+00:44:26.000 INFO  6 source files to be analyzed for the text and secrets analysis
+00:44:26.041 INFO  6/6 source files have been analyzed for the text and secrets analysis
+00:44:26.043 INFO  Start fetching files for the binary file analysis
+00:44:26.044 INFO  There are no files to be analyzed for the binary file analysis
+00:44:26.048 INFO  Sensor EnterpriseTextAndSecretsSensor [textenterprise] (done) | time=597ms
+00:44:26.076 INFO  ------------- Run sensors on project
+00:44:26.350 INFO  Sensor Scan Manifest A3S Context Collector [commona3scontextcollector]
+00:44:26.351 INFO  Sensor Scan Manifest A3S Context Collector [commona3scontextcollector] (done) | time=0ms
+00:44:26.352 INFO  Sensor Architecture JS/TS UDG cache [architecturejavascriptfrontend]
+00:44:26.355 INFO  Found 0 potential Udg file location(s) for "js" in "/home/runner/work/ic-experimento/ic-experimento/.scannerwork"
+00:44:26.356 INFO  Found 0 potential Udg file location(s) for "ts" in "/home/runner/work/ic-experimento/ic-experimento/.scannerwork"
+00:44:26.357 INFO  Architecture JS/TS UDG cache: 0 UDG(s) cached, 0 restored from the cache, 4 source file(s) without a UDG, 0 UDG(s) not attributable to a source file, 0 UDG(s) that could not be cached
+00:44:26.360 INFO  Sensor Architecture JS/TS UDG cache [architecturejavascriptfrontend] (done) | time=6ms
+00:44:26.360 INFO  Sensor JavaScript/TypeScript/CSS analysis [javascript]
+00:44:26.591 INFO  Detected os: Linux arch: amd64 alpine: false. Platform: LINUX_X64
+00:44:26.591 INFO  Deploy location /home/runner/.sonar/js/node-runtime, tagetRuntime: /home/runner/.sonar/js/node-runtime/node,  version: /home/runner/.sonar/js/node-runtime/version.txt
+00:44:29.252 INFO  Using embedded Node.js runtime.
+00:44:29.252 INFO  Using Node.js executable: '/home/runner/.sonar/js/node-runtime/node'.
+00:44:31.136 INFO  Memory configuration: OS (15988 MB), Node.js (4288 MB).
+00:44:31.145 INFO  gRPC analyze-project server listening on 127.0.0.1:39551
+00:44:31.279 INFO  Plugin version: [14.0.0.46108]
+00:44:34.531 INFO  Found 0 tsconfig.json file(s): []
+00:44:34.531 INFO  6 source files to be analyzed
+00:44:34.532 INFO  Analyzing 5 file(s) using default options [lib: lib.esnext.d.ts, lib.dom.d.ts]
+00:44:34.532 INFO  6/6 source files have been analyzed
+00:44:34.541 INFO  JasminAstConsumer done
+00:44:34.541 INFO  Hit the cache for 0 out of 5
+00:44:34.542 INFO  Miss the cache for 5 out of 5: ANALYSIS_MODE_INELIGIBLE [5/5]
+00:44:34.542 INFO  Sensor JavaScript/TypeScript/CSS analysis [javascript] (done) | time=8184ms
+00:44:34.543 INFO  Sensor IaC Project Sensor [iac]
+00:44:34.544 INFO  Sensor IaC Project Sensor [iac] (done) | time=1ms
+00:44:34.544 INFO  Sensor JsSecuritySensorV2 [jasmin]
+00:44:34.597 INFO  React render simulation time limit is set to 300 seconds
+00:44:34.598 INFO  4 file(s) will be analysed by SonarJasmin.
+00:44:37.220 INFO  Analysis progress:  25% (1/4 files)
+00:44:37.221 INFO  Analysis progress:  50% (2/4 files)
+00:44:37.838 INFO  Analysis progress:  75% (3/4 files)
+00:44:37.846 INFO  Sensor JsSecuritySensorV2 [jasmin] (done) | time=3301ms
+00:44:37.847 INFO  Sensor JsArchitectureSensor [architecture]
+00:44:37.857 INFO  Found 1 potential Udg file location(s) for "js" in "/home/runner/work/ic-experimento/ic-experimento/.scannerwork"
+00:44:37.858 INFO  - /home/runner/work/ic-experimento/ic-experimento/.scannerwork/architecture/js
+00:44:37.869 INFO  Architecture analysis is enabled.
+00:44:37.874 INFO  * Protobuf reading starting | memory total=292 | free=168 | used=123 (MB)
+00:44:37.874 INFO  * Reading SonarArchitecture UDG data from directory "/home/runner/work/ic-experimento/ic-experimento/.scannerwork/architecture/js"
+00:44:37.915 INFO  * Files successfully loaded: "4" out of "4"
+00:44:37.915 INFO  * Purging externals (components not scanned) from graphs
+00:44:37.916 INFO  * Purging excluded nodes from graphs
+00:44:37.918 INFO  * Protobuf reading complete | memory total=292 | free=164 | used=127 (MB)
+00:44:37.933 INFO  * Build architecture.graph.js.file_graph.default_perspective hierarchy graph complete (filtered=false) | memory total=292 | free=160 | used=131 (MB)
+00:44:37.993 INFO  No directives configured
+00:44:38.003 INFO  * No intended architecture defined or detected, using an empty model
+00:44:38.093 INFO  Boundary detection is disabled.
+00:44:38.096 INFO  Sensor JsArchitectureSensor [architecture] (done) | time=249ms
+00:44:38.097 INFO  Sensor Zero Coverage Sensor
+00:44:38.100 INFO  Sensor Zero Coverage Sensor (done) | time=1ms
+00:44:38.100 INFO  Sensor Architecture Telemetry [architecture]
+00:44:38.101 INFO  Sensor Architecture Telemetry [architecture] (done) | time=0ms
+00:44:38.112 INFO  ------------- Gather SCA dependencies on project
+00:44:38.414 INFO  Dependency analysis skipped
+00:44:38.415 INFO  CPD Executor 3 files had no CPD blocks
+00:44:38.416 INFO  CPD Executor Calculating CPD for 2 files
+00:44:38.422 INFO  CPD Executor CPD calculation finished (done) | time=6ms
+00:44:38.423 INFO  SCM Publisher SCM provider for this project is: git
+00:44:38.424 INFO  SCM Publisher 6 source files to be analyzed
+00:44:38.716 INFO  SCM Publisher 6/6 source files have been analyzed (done) | time=291ms
+00:44:38.723 INFO  SCM revision ID '8709244528c763c19d23a131bc4e69fba2d58c26'
+00:44:41.810 INFO  Analysis report generated in 3089ms, dir size=399 KB
+00:44:41.833 INFO  Analysis report compressed in 24ms, zip size=83 KB
+00:44:42.579 INFO  Analysis report uploaded in 746ms
+00:44:42.580 INFO  ANALYSIS SUCCESSFUL, you can find the results at: ***/dashboard?id=LuizCenci_ic-experimento&branch=main
+00:44:42.580 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+00:44:42.581 INFO  More about the report processing at ***/api/ce/task?id=AaE33l5jWAEmh7_jLoQM
+00:44:42.581 INFO  ------------- Upload SCA dependency files
+00:44:43.826 INFO  Successfully sent architecture data
+00:44:44.682 INFO  Sensor cache published successfully
+00:44:45.475 INFO  Analysis total time: 33.397 s
+00:44:45.497 INFO  SonarScanner Engine completed successfully
+00:44:45.831 INFO  EXECUTION SUCCESS
+00:44:45.832 INFO  Total time: 39.873s
